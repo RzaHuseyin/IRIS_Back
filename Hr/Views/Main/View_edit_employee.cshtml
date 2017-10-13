@@ -1,0 +1,409 @@
+﻿
+@{
+    ViewBag.Title = "View_edit_employee";
+    ViewBag.NamePage = "Bax - Dəyiş İşçilər";
+    Layout = "~/Views/Shared/_HrLayout.cshtml";
+}
+
+<div class="white-box">
+    <button class="btn btn-default js_form_cancel pull-right m-l-5">Ləğv et</button>
+    <button id="GO" class="btn btn-info js_form_edit pull-right "> <i class="fa fa-pencil"></i> Dəyiş</button>
+    <div class="panel-wrapper collapse in" aria-expanded="true">
+        <div class="panel-body">
+            <form class="form-horizontal js_form" role="form">
+                <div class="form-body">
+                    <h3 class="box-title">Şəxsi Məlumatlar</h3>
+                    <hr class="m-t-0 m-b-40">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Adı:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Rüstəmov Samir İsfəndiyar </p>
+                                    <input class="form-control" type="text" value="Rüstəmov Samir İsfəndiyar">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">İşçi İD:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 021545 </p>
+                                    <input class="form-control" type="text" value="021545">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Doğum tarixi:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 05-05-1987 </p>
+                                    <input class="form-control" type="text" value="05-05-1987">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Qeydiyyat ünvanı:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Bakı şəh. Binəqədi ray. Biləcəri q. ev159, m42 </p>
+                                    <input class="form-control" type="text" value="Bakı şəh. Binəqədi ray. Biləcəri q. ev159, m42">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Əlaqə Nömrəsi:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static">  +994502648975 </p>
+                                    <input class="form-control" type="text" value="+994502648975">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Faktiki ünvan:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Bakı şəh. Binəqədi ray. Biləcəri q. ev159, m42 </p>
+                                    <input class="form-control" type="text" value="Bakı şəh. Binəqədi ray. Biləcəri q. ev159, m42">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Əlaqə Nömrəsi 2:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> +994502358974 </p>
+                                    <input class="form-control" type="text" value="+994502358974">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">E-mail:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> samir@gmail.com </p>
+                                    <input class="form-control" type="text" value="samir@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Cinsi:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Kişi </p>
+                                    <input class="form-control" type="text" value="Kişi">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Təhsili:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Ali </p>
+                                    <input class="form-control" type="text" value="Ali">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Ümumi staj:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 16 il </p>
+                                    <input class="form-control" type="text" value="16 il">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                    <h3 class="box-title">Şirkət məlumatları</h3>
+                    <hr class="m-t-0 m-b-40">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Departament:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> İR Departamenti </p>
+                                    <input class="form-control" type="text" value="İR Departamenti">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Qeydiyyat tarixi:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 05-08-2016 </p>
+                                    <input class="form-control" type="text" value="05-08-2016">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Şöbə:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> B4 </p>
+                                    <input class="form-control" type="text" value="B4">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Bölmə:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> H7 </p>
+                                    <input class="form-control" type="text" value="H7">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Vəzifə:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Kiçik mütəxəssis </p>
+                                    <input class="form-control" type="text" value="Kiçik mütəxəssis">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Əmək haqqı:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 1500 AZN </p>
+                                    <input class="form-control" type="text" value="1500 AZN">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <!--/row-->
+                    <h3 class="box-title">Bank Məlumatları</h3>
+                    <hr class="m-t-0 m-b-40">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Bankın Adı:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> HGD Bank </p>
+                                    <input class="form-control" type="text" value="HGD Bank">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Cari Hesab:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> AZ4512RUTA1285UTY54879564865 </p>
+                                    <input class="form-control" type="text" value="AZ4512RUTA1285UTY54879564865">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">SWİFT:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> HG9834F </p>
+                                    <input class="form-control" type="text" value="HG9834F">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Filialın Adı:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> Mərkəz Filialı </p>
+                                    <input class="form-control" type="text" value="Mərkəz Filialı">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Kart Nömrəsi:</label>
+                                <div class="col-md-9">
+                                    <p class="form-control-static"> 4514 1231 4574 9854 </p>
+                                    <input class="form-control" type="text" value="4514 1231 4574 9854">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                    <h3 class="box-title">Sənədlər</h3>
+                    <hr class="m-t-0 m-b-40">
+                    <div class="row el-element-overlay">
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/1.jpg" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/1.jpg"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">Şəkil</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/2.png" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/2.png"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">CV</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/3.png" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/3.png"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">Əmək Kitabçası</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/4.png" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/4.png"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">Sosial Kart</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/5.png" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/5.png"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">Diplom</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                        <!-- document -->
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="white-box">
+                                <div class="el-card-item">
+                                    <div class="el-card-avatar el-overlay-1">
+                                        <img src="../plugins/images/person_docs/6.png" />
+                                        <div class="el-overlay">
+                                            <ul class="el-info">
+                                                <li><a class="btn default btn-outline image-popup-vertical-fit" href="../plugins/images/person_docs/6.png"><i class="icon-magnifier"></i></a></li>
+                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i class="icon-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="el-card-content">
+                                        <h3 class="box-title">Sertifikat</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- document -->
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn btn-info"> <i class="fa fa-pencil"></i> Yadda Saxla</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
